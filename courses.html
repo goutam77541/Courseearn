@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Explore online courses and discover your next skill with CourseEarn.">
+  <title>Explore Courses — CourseEarn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    Your next skill starts here <span>→</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CourseEarn home">
+      <span class="brand-mark">C</span>
+      <span>Course<span class="brand-accent">Earn</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="index.html#about">About</a>
+    </nav>
+
+    <a class="header-cta" href="index.html">Home <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="courses-section section-wrap" id="courses">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            THE COURSE DIRECTORY
+          </div>
+          <h2>Find your next skill.</h2>
+          <p class="section-description">
+            Explore learning options in marketing, technology, design and business.
+            Choose a course that matches your goals.
+          </p>
+        </div>
+
+        <div class="course-controls">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search"
+              placeholder="Search courses..."
+              aria-label="Search courses">
+          </label>
+
+          <select id="categoryFilter" aria-label="Filter by category">
+            <option value="all">All categories</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Technology">Technology</option>
+            <option value="Design">Design</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="notice" role="note">
+        <span>ⓘ</span>
+        <div>
+          <strong>Sample course listings</strong>
+          <p>
+            These are demonstration listings. Course details and approved
+            affiliate links must be added in courses.js before promotion.
+          </p>
+        </div>
+      </div>
+
+      <div class="course-grid" id="courseGrid" aria-live="polite"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        No courses match your search. Try another keyword or category.
+      </div>
+
+      <div class="center-cta">
+        <p>Ready to learn something new?</p>
+        <a href="index.html" class="text-link">
+          Back to home <span>→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>Course<span class="brand-accent">Earn</span></span>
+      </a>
+      <p>Find a skill. Take the next step.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="#affiliate-disclosure">Affiliate disclosure</a>
+      </div>
+    </div>
+
+    <div class="disclosure" id="affiliate-disclosure">
+      <strong>Affiliate disclosure</strong>
+      <p>
+        Some links may be affiliate links. If you make a qualifying purchase
+        through an approved affiliate link, CourseEarn may earn a commission
+        at no extra cost to you. Always check the provider's official course
+        page for current prices and details.
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> CourseEarn. All rights reserved.</span>
+      <span>Made for curious minds in India.</span>
+    </div>
+  </footer>
+
+  <script src="courses.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
